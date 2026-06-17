@@ -5,8 +5,8 @@ import time
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes, MessageHandler, filters
 
-# ========== توكن البوت ==========
-BOT_TOKEN = "8962868238:AAFAExc87c6jcUcZUHhEUbSGHHz-7IzdFcI"
+# ========== توكن البوت الجديد ==========
+BOT_TOKEN = "8962868238:AAEWk6Y9rXe6E7rRqds8bOD1BMa48IVFgGA"
 
 # ========== USERNAME CHECKER ==========
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
