@@ -6,7 +6,6 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes, MessageHandler, filters
 
 # ========== توكن البوت ==========
-# ملاحظة: استبدل هذا التوكن بالتوكن الجديد من @BotFather إذا كان لا يعمل
 BOT_TOKEN = "8962868238:AAFAExc87c6jcUcZUHhEUbSGHHz-7IzdFcI"
 
 # ========== USERNAME CHECKER ==========
@@ -85,8 +84,13 @@ CONTENT = {
 }
 
 # ========== HANDLERS ==========
+
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("👋 أهلاً! بوت فحص يوزرات TikTok و Discord.\nاختر ما تريد:", parse_mode="Markdown", reply_markup=main_menu_keyboard())
+    await update.message.reply_text(
+        "👋 أهلاً! بوت فحص يوزرات TikTok و Discord.\nاختر ما تريد:",
+        parse_mode="Markdown",
+        reply_markup=main_menu_keyboard()
+    )
 
 async def menu_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("📋 القائمة الرئيسية:", reply_markup=main_menu_keyboard())
